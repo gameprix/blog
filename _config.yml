@@ -1,10 +1,10 @@
 #-------------------------------
 # General Site Settings
 
-title: Gatulas.com | Gatulas official
-description: Gatulas.com gatulas Leting TNI Negara Kesatuan Indonesia Dari Sabang Sampai Meroke. # this means to ignore newlines until "baseurl:"
+title: Gameprix | gameprix official
+description: Gameprix.github.io Leting TNI Negara Kesatuan Indonesia Dari Sabang Sampai Meroke. # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://gameprix.github.io
 
 
 #-------------------------------
@@ -70,3 +70,57 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+title: "GamePrix Blog"
+description: "Artikel Game, Review, Tips, dan Panduan Lengkap"
+url: "https://gameprix.github.io"
+baseurl: "/blog"
+
+# Mengaktifkan GitHub Pages
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Menonaktifkan build Jekyll default utk file HTML agar tetap utuh (recommended)
+include:
+  - "*.html"
+  - "*.htm"
+
+# Folder yang tetap ikut di-build
+keep_files:
+  - assets
+  - images
+  - css
+  - js
+
+# SEO & Sitemap
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Sitemap
+sitemap:
+  filename: "sitemap.xml"
+  changefreq: "daily"
+  priority: 1.0
+
+# Google Verification (opsional, Anda bisa hapus karena sudah ada meta di HTML)
+google_site_verification: "i7g7vB68vxJSWAjiWlkxYb8HCFNv6-KSOoz5idzIbJQ"
+
+# Struktur permalink (jika nanti ingin posts folder)
+permalink: /:title/
+
+# Disqus / komentar (opsional)
+# disqus:
+#   shortname: gameprix
+
+# Build output
+exclude:
+  - README.md
+  - "*.zip"
+  - node_modules
+  - package.json
+  - package-lock.json
+
+
